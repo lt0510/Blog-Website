@@ -1,0 +1,30 @@
+
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~
+$ cd desktop
+
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop
+$ cs myblog
+bash: cs: command not found
+
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop
+$ cd myblog
+
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop/myblog
+$ python -m venv virt
+
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop/myblog
+$ source virt/scripts/activate
+(virt)
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop/myblog
+$ cd myblog
+(virt)
+lokesh@LAPTOP-DUEQBFCA MINGW64 ~/desktop/myblog/myblog
+$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 19, 2021 - 14:02:41
+Django version 3.2.5, using settings 'myblog.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.

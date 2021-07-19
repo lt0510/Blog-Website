@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Edit blog post
+{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+	{% if user.id == post.author.id %}
+<h1>Update Post</h1>
+<br/><br/>
+<div class ="form-group">
+<form method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button class="btn btn-success">Update</button>
+</div>
+	{% else %}
+		Not allowed and u kmow it !!
+	{% endif %}
+	
+{% else %}
+
+Not allowed and u kmow it !!
+
+{% endif %}
+
+{% endblock %}
